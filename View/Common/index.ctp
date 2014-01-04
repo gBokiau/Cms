@@ -5,9 +5,7 @@
 <?php echo $this->Form->end('Create');?>
 </div>
 <div class="<?=$this->request->params['controller'];?>  index">
-<div class="col">
 <h2><?= ucfirst($this->request->params['controller']);?></h2>
 <ul class="list">
 	<?php echo $this->fetch('main');?>
 </ul>
-</div>

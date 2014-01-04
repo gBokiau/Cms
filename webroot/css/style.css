@@ -1,3 +1,15 @@
+@font-face{ 
+	font-family: 'WebSymbolsLigaRegular';
+		src: url('websymbolsligaregular.eot');
+		src: url('websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+			url('websymbolsligaregular.woff') format('woff'),
+			url('websymbolsligaregular.ttf') format('truetype'),
+			url('websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+}
+@font-face{ 
+	font-family: 'AtlasGrotesk';
+		src: url('https://commercialtype.com/webfonts/atlas/atlas_grotesk/AtlasGrotesk-Regular/AtlasGrotesk-Regular-Web.woff') format('woff');
+}
 * {
 	margin:0;
 	padding:0;
@@ -267,9 +279,12 @@ width:200px;float:left; margin-right:10px;
 list-style:none;
 }
 #list li, .list li {
-border-top:1px solid #222;
 color:#aaa;
-padding:5px 0;
+float:left;
+margin:0 20px 20px 0;
+width:220px;
+box-shadow: 1px 1px 2px 2px #e4e4e4;
+border-radius:3px;
 }
 #list strong {
 display:inline-block;
@@ -304,10 +319,17 @@ color:#666;
 .col .list li {
 padding:1px;
 }
-.col .list a {
-color:#aaa;text-decoration:none;
+.list img {
+	width:220px !important;
+	height: auto !important;
 }
-.col .list strong a {
+.list a img {margin-left:-5px; margin-top:-5px;margin-bottom: -5px;}
+.list a {
+color: #aaa;
+text-decoration: none;
+padding:5px;
+display:inline-block;}
+.list strong a {
 color:blue;text-decoration:none;
 }
 #list strong a:hover, .list strong a:hover {
@@ -340,3 +362,51 @@ p.new a:hover {
 p.new a:hover:before {
     color: #AAAAAA;
 }
+div#category-menu {
+	border-radius: 0;
+	width: 80%;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.categorytree>li {
+box-shadow: 1px 1px 3px 1px #ccc;
+margin:15px 0;
+list-style: none;
+border-radius: 2px;
+padding:0;
+}
+.categorytree li li {
+	border-top:1px solid #ededed;
+	padding-left:20px;
+	list-style: none;
+
+}
+.categorytree li span a {
+	text-decoration: none;
+	color: #5E46DC;
+	font-size: 13px;
+	display:block;
+	padding:10px;
+}
+.categorytree li li a {
+	color:#666;
+}
+.categorytree li li a:hover {
+	color:#555;
+}
+.categorytree li span a:hover {
+	background: #f1f1f1;
+}
+a.delete {float: right;
+	text-decoration: none;
+	padding:.6em;
+	border: 1px solid #eee;
+	color:#777;
+	border-radius:4px;
+	display:none;
+	background:#efefef;
+	margin-top:-2em;
+	font-family: WebSymbolsLigaRegular;
+}
+li:hover>a.delete {display:block;}
