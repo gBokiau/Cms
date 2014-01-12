@@ -12,9 +12,9 @@ class CmsHelper extends AppHelper {
 	
 
 	public function statusInput($field='status_id', $text = '') {
-		$this->setEntity($field);
+		$this->Form->setEntity($field);
 		$text = count($text) ? ' '.$text : '';
-		$value = $this->value();
+		$value = $this->Form->value();
 		$labelclass = $value['value'] ? ' btn-success' : '';
 		return $this->Form->input($field, array(
 		'label' => array(
