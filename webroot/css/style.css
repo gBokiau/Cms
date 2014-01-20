@@ -610,7 +610,6 @@ input[type="button"].btn-block {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	margin:.5em 0 .5em .3em;
 }
 .btn label {padding-right: 0;}
 .btn-group>.btn, .btn-group-vertical>.btn {
@@ -855,7 +854,6 @@ li:hover>a.delete {display:block;}
 .dodelete .delete label span {width:auto;}
 .dodelete .delete label span:after {content:' Do not delete after all?'; font-family:Arial;}
 .invisible {opacity:0; -webkit-transition: opacity .2s}
-div:not(.off):hover>.invisible {opacity:1;}
 div.submit.fixed {
 position:fixed;
 bottom:0;
