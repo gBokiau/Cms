@@ -25,6 +25,11 @@
 			<div id="content">
 				<?php $this->Session->flash(); ?>
 				<h1><?= ucfirst($this->request->params['controller']);?></h1>
+				<?php
+				$model = Inflector::classify($this->request->params['controller']);
+				if(count($this->validationErrors[$model])) {
+					echo '<p class="error-message">Changes could not be saved !<br/>Please review the fields indicated in red below</p>';
+				}?>
 				<?php echo $content_for_layout; ?>
 			</div>
 		</div>
