@@ -42,6 +42,8 @@ list-style:none;
 background:#eee;
 width:180px;padding:20px 0;
 }
+.pull-right {
+float:right;}
 #content {
 	margin-left:180px;
 border-left:1px solid #ccc;
@@ -864,3 +866,5 @@ right:0;
 padding:10px 20px 10px 220px;
 box-shadow: -2px -2px 2px rgba(181, 209, 228, 0.9);
 }
+
+.error-message {font-weight:bold; color:red; margin:1em 0;}
