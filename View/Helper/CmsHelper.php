@@ -27,4 +27,5 @@ class CmsHelper extends AppHelper {
 		'options'=>false
 		));
 	}
+	
 }

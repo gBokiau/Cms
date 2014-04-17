@@ -5,7 +5,7 @@
 	<title><?php echo $site_name; ?> 	&rsaquo; Administration 	&rsaquo; 	<?php echo $title_for_layout; ?></title>
 	<?php
 		echo $this->Html->css('/cms/css/style');
-		echo $this->Html->script('/mootools/js/1.2.4-core-yc');
+		echo $this->Html->script('/mootools/js/mootools-1.2.4-core-nc');
 		echo $scripts_for_layout;
 	?>
 </head>
@@ -26,9 +26,8 @@
 				<?php $this->Session->flash(); ?>
 				<h1><?= ucfirst($this->request->params['controller']);?></h1>
 				<?php
-				$model = Inflector::classify($this->request->params['controller']);
-				if(count($this->validationErrors[$model])) {
-					echo '<p class="error-message">Changes could not be saved !<br/>Please review the fields indicated in red below</p>';
+				if(count($this->validationErrors[$modelName])) {
+					echo '<p class="error-message">Changes could not be saved ! Please review the fields indicated in red below.</p>';
 				}?>
 				<?php echo $content_for_layout; ?>
 			</div>
