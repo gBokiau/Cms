@@ -5,7 +5,7 @@
 	<title><?php echo $site_name; ?> 	&rsaquo; Administration 	&rsaquo; 	<?php echo $title_for_layout; ?></title>
 	<?php
 		echo $this->Html->css('/cms/css/style');
-		echo $this->Html->script('/mootools/js/mootools-1.2.4-core-nc');
+		echo $this->Html->script('/mootools/js/1.2.4-core-yc');
 		echo $scripts_for_layout;
 	?>
 </head>
